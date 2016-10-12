@@ -1,0 +1,286 @@
+
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GiveScores.com</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Place favicon.ico in the root directory -->
+</head>
+<body>
+
+<div class="holder">
+    <div class="loggedout container">
+        <h1><span class="tWelcome">Welcome to </span><a class="gs" href="http://givescores.com"> GiveScores.com</a></h1>
+        <h3 id="logsubheader" class="subheader tLoginIf">Login if you are already registered:</h3>
+
+        <div class="mailDiv"><input type="text" id="loginEmail" placeholder=" email address"></div>
+        <div class="passDiv"><input type="password" id="loginPass" placeholder=" password"><button class="loginButton"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button></div>
+        <a href="" class="forgotPass tForgotPass">forgot password?</a>
+        <br>
+        <button class="showRegisterMenu tRegister">Register</button>
+        <button id="nn1" class="notNowButton1 tNotNow">Not now</button>
+    </div>
+
+    <div class="register container">
+        <h1><span class="tWelcome">Welcome to </span><a class="gs" href="http://givescores.com"> GiveScores.com</a></h1>
+        <h3 id="regsubheader" class="subheader tRegNow">Register now with the following:</h3>
+
+        <div class="mailDiv"><input type="text" id="registerEmail" placeholder=" email address"><br></div>
+        <div class="passDiv"><input type="password" id="registerPass" placeholder=" password"><button class="registerButton"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button></div>
+        <br>
+        <div id="btn2Div"><button class="notNowButton2 tBack">Back</button></div>
+    </div>
+
+    <div class="thanks container">
+
+        <h1><span class="tWelcome">Welcome to </span><a href="http://givescores.com"> GiveScores.com</a></h1>
+
+        <h3 class="tThankYou">Thank you for registering</h3>
+
+        <div class="inputDiv">
+
+        </div>
+        <div class="buttonHolder">
+            <button class="tVote voteButton">Vote</button>
+        </div>
+    </div>
+
+
+    <div class="invite container">
+        <h1 class="tSpread">Spread the word, help us grow!</h1>
+
+        <h3 class="tInviteAsMany">Invite as many friends as you want:</h3>
+
+        <div class="inputDiv">
+            <input type="email" id="inviteMails" placeholder=" email address">
+        </div>
+        <div class="buttonHolder">
+            <button class="tBack backFromInvite">Back</button>
+            <button class="tSubmit submitFriendsButton">Submit</button>
+        </div>
+    </div>
+
+    <div class="vote container">
+
+        <h1><span class="tProvidedBy">Provided by </span><a href="http://givescores.com"> GiveScores.com</a></h1>
+
+        <div class="starsDiv rating">
+
+            <input class="voteInput" type="radio" id="star5" name="rating" value="5"/><label class="full" for="star5"
+                                                                                             title="It's Awesome! - 5 stars"></label>
+            <input class="voteInput" type="radio" id="star4half" name="rating" value="4.5"/><label class="half"
+                                                                                                   for="star4half"
+                                                                                                   title="Great - 4.5 stars"></label>
+            <input class="voteInput" type="radio" id="star4" name="rating" value="4"/><label class="full" for="star4"
+                                                                                             title="Pretty good - 4 stars"></label>
+            <input class="voteInput" type="radio" id="star3half" name="rating" value="3.5"/><label class="half"
+                                                                                                   for="star3half"
+                                                                                                   title="Above average - 3.5 stars"></label>
+            <input class="voteInput" type="radio" id="star3" name="rating" value="3"/><label class="full" for="star3"
+                                                                                             title="So and so - 3 stars"></label>
+            <input class="voteInput" type="radio" id="star2half" name="rating" value="2.5"/><label class="half"
+                                                                                                   for="star2half"
+                                                                                                   title="Meh - 2.5 stars"></label>
+            <input class="voteInput" type="radio" id="star2" name="rating" value="2"/><label class="full" for="star2"
+                                                                                             title="Kinda bad - 2 stars"></label>
+            <input class="voteInput" type="radio" id="star1half" name="rating" value="1.5"/><label class="half"
+                                                                                                   for="star1half"
+                                                                                                   title="It's bad - 1.5 stars"></label>
+
+            <input class="voteInput" type="radio" id="star1" name="rating" value="1"/><label class="full" for="star1"
+                                                                                             title="Sucks - 1 star"></label>
+            <input class="voteInput" type="radio" id="starhalf" name="rating" value="0.5"/><label class="half"
+                                                                                                  for="starhalf"
+                                                                                                  title="Sucks big time - 0.5 stars"></label>
+
+        </div>
+        <h2><span class="tRate">Rate this website now,</span><Br><span
+                class="tBecause"> your opinion matters!</span></h2>
+
+        <div class="twobuttons">
+            <br><br><br><br>
+            <img src="images/Gear.svg" id="settingsBtn" class="settingsButton">
+            <img src="images/User.svg" id="userBtn" class="userButton">
+        </div>
+
+        <div class="inviteButtonHolder">
+            <button class="inviteButton" href="#"><span class="tInvite">Invite</span></button>
+        </div>
+
+
+
+    </div>
+
+    <div class="container loader">
+        <i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw margin-bottom"></i>
+    </div>
+
+    <div class="container feedback">
+        <h2 class="tOverall">Overall score: </h2>
+
+        <div class="overalScore">
+
+          <span class="fa-stack ">
+          <i class="fa fa-fw fa-lg fa-star fa-stack-1x "></i>
+          <i class="fa fa-fw fa-lg fa-star star-base  fa-stack-1x"></i>
+          <i class="fa fa-fw fa-lg fa-star-half fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack ">
+          <i class="fa fa-fw fa-lg fa-star fa-stack-1x "></i>
+          <i class="fa fa-fw fa-lg fa-star star-base  fa-stack-1x"></i>
+          <i class="fa fa-fw fa-lg fa-star-half fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack ">
+          <i class="fa fa-fw fa-lg fa-star fa-stack-1x "></i>
+          <i class="fa fa-fw fa-lg fa-star star-base  fa-stack-1x"></i>
+          <i class="fa fa-fw fa-lg fa-star-half fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack ">
+          <i class="fa fa-fw fa-lg fa-star fa-stack-1x "></i>
+          <i class="fa fa-fw fa-lg fa-star star-base  fa-stack-1x"></i>
+          <i class="fa fa-fw fa-lg fa-star-half fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack ">
+          <i class="fa fa-fw fa-lg fa-star fa-stack-1x "></i>
+          <i class="fa fa-fw fa-lg fa-star star-base  fa-stack-1x"></i>
+          <i class="fa fa-fw fa-lg fa-star-half fa-stack-1x"></i>
+        </span>
+        </div>
+        <div class="userScore rating">
+            <input type="radio" class="voteInput" id="fb_star5" name="rating" value="5"/><label class="full" for="star5"
+                                                                              title="It's Awesome! - 5 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star4half" name="rating" value="4.5"/><label class="half" for="star4half"
+                                                                                    title="Great - 4.5 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star4" name="rating" value="4"/><label class="full" for="star4"
+                                                                              title="Pretty good - 4 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star3half" name="rating" value="3.5"/><label class="half" for="star3half"
+                                                                                    title="Above average - 3.5 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star3" name="rating" value="3"/><label class="full" for="star3"
+                                                                              title="So and so - 3 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star2half" name="rating" value="2.5"/><label class="half" for="star2half"
+                                                                                    title="Meh - 2.5 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star2" name="rating" value="2"/><label class="full" for="star2"
+                                                                              title="Kinda bad - 2 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star1half" name="rating" value="1.5"/><label class="half" for="star1half"
+                                                                                    title="It's bad - 1.5 stars"></label>
+            <input type="radio" class="voteInput" id="fb_star1" name="rating" value="1"/><label class="full" for="star1"
+                                                                              title="Sucks - 1 star"></label>
+            <input type="radio" class="voteInput" id="fb_starhalf" name="rating" value="0.5"/><label class="half" for="starhalf"
+                                                                                   title="Sucks big time - 0.5 stars"></label>
+
+        </div>
+        <div class="quote">
+            <p class="quoteText">
+
+            </p>
+            <span class="quoteAuthor"></span>
+
+
+        </div>
+
+
+        <div class="twobuttons">
+            <br><br><br><br>
+            <img src="images/Gear.svg" class="settingsButton">
+            <img src="images/User.svg" class="userButton">
+        </div>
+
+        <div class="socialHolder">
+            <img src="images/li-01.png" class="lin">
+            <img src="images/g-01.png" class="gp">
+            <img src="images/fb-01.png" class="fb">
+            <img src="images/tw-01.png" class="tw">
+            <br>
+        </div>
+
+    </div>
+    <div class="container user">
+        <h1><span class="tProvidedBy">Provided by </span><a href="http://givescores.com"> GiveScores.com</a></h1>
+
+        <div class="userInfo">
+            <h2 class="tRegTo">Registered to:</h2>
+            <span class="userEmail"></span>
+            <br><br>
+            <a href="" id="changePass" class="tChangePass">change password</a>
+        </div>
+        <div class="logoutdiv buttonHolder">
+            <button id="backFromUser" class="tBack">Back</button>
+            <button class="tLogout logoutButton">Log out</button>
+        </div>
+
+    </div>
+    <div class="container error">
+        <h1><span class="tProvidedBy">Provided by </span> <a href="http://givescores.com"> GiveScores.com</a></h1>
+
+        <div class="error-message-container">
+            <p class="error-text"></p>
+        </div>
+    </div>
+
+    <div class="container changeDiv">
+        <h1><span class="tProvidedBy">Provided by </span><a href="http://givescores.com"> GiveScores.com</a></h1>
+        <span id="changeError">&nbsp;</span>
+        <div class="mailDiv2"><input type="password" id="oldPass" placeholder=" old password"></div>
+        <div class="passDiv2"><input type="password" id="newPass1" placeholder=" new password"></div>
+        <div class="passDiv2"><input type="password" id="newPass2" placeholder=" repeat password"></div>
+        <button id="backFromChange" class="tBack">Back</button>
+        <button class="changePassButton tSubmit">Submit</button>
+    </div>
+
+    <div class="container successDiv">
+        <div id="sucSpanDiv"><span id="success"></span></div>
+    </div>
+
+    <div class="forgot container">
+        <h1><span class="tWelcome">Welcome to </span><a class="gs" href="http://givescores.com"> GiveScores.com</a></h1>
+        <span id="forgotError">&nbsp;</span>
+        <h3 class="tEnterEmail">Enter email you used for registration:</h3>
+        <div class="forgotmailDiv">
+            <input type="email" id="forgottenPassMail" placeholder=" email address">
+        </div>
+        <button id="backFromForgot" class="tBack">Back</button>
+        <button id="submitForgotenPassMail" class="tSubmit">Submit</button>
+
+    </div>
+
+
+</div>
+
+<div class="container" id="settings">
+    <h1 class="tLanguages">Languages</h1>
+    <div id="languages">
+        <img id="uk" class="flag flagActive" src="images/United%20Kingdom.png">
+        <img id="fr" class="flag" src="images/France.png">
+        <img id="de" class="flag" src="images/Germany.png">
+        <img id="es" class="flag" src="images/Spain.png">
+        <img id="gr" class="flag" src="images/Greece.png">
+    </div>
+    <h1 class="tPopup">Popup settings:</h1>
+    <input type="radio" class="popupOption" id="r1" name="popupOption" value="everyPage"><label for="r1" class="radioLbl tEvery"> Every page</label>
+    <input type="radio" class="popupOption" id="r2" name="popupOption" value="random"><label for="r2" class="radioLbl tRandom"> Random</label>
+    <input type="radio" class="popupOption" id="r3" name="popupOption" value="onClick"><label for="r3" class="radioLbl tOnClick"> On click</label>
+    <h1 class="tOnScreen">On screen duration:</h1>
+    <input type="text" size="1" maxlength="2" pattern="([0-9]|[0-9])" id="seconds"><span class="radioLbl tSeconds"> seconds</span><br><br>
+    <div class="doneButtonHolder"><button id="done" class="doneButton tBack">Back</button></div>
+
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="scripts/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script src="scripts/vendor.js"></script>
+<script src="scripts/langs.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
