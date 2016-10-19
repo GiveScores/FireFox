@@ -298,8 +298,8 @@
         for (i = 0; i < baseStarsNumber; i++) {
             $(".overalScore").append("<span class='fa-stack '><i class='fa fa-fw fa-lg fa-star star-base  fa-stack-1x'></i></span>");
         }
-        $('.quote .quoteText').html("\"" + quote.text + "\"");
-        $('.quote .quoteAuthor').html(quote.author);
+        $('.quote .quoteText').text("\"" + quote.text + "\"");
+        $('.quote .quoteAuthor').text(quote.author);
         $('.loader').hide();
         $('.feedback').show();
 
